@@ -968,15 +968,15 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       terrainTiles_default_6: -1910411588
-      terrainTiles_default_32: 516667453
-      terrainTiles_default_39: 1392563759
+      terrainTiles_default_20: -74716719
+      terrainTiles_default_13: 2146772376
       terrainTiles_default_28: 1082795034
       terrainTiles_default_21: -441684844
       terrainTiles_default_18: -1626810583
       terrainTiles_default_36: 1629467347
       terrainTiles_default_19: 1182885235
-      terrainTiles_default_34: 165492639
       terrainTiles_default_38: -1115941581
+      terrainTiles_default_29: 532987095
       terrainTiles_default_37: -1163581169
       terrainTiles_default_17: -1077468109
       terrainTiles_default_7: -364622514
@@ -999,14 +999,14 @@ TextureImporter:
       terrainTiles_default_16: -1078548513
       terrainTiles_default_2: -347650869
       terrainTiles_default_3: 909623839
-      terrainTiles_default_20: -74716719
-      terrainTiles_default_31: -1248415558
+      terrainTiles_default_39: 1392563759
       terrainTiles_default_33: -633793399
+      terrainTiles_default_31: -1248415558
       terrainTiles_default_22: -1807680840
       terrainTiles_default_11: 790446261
+      terrainTiles_default_34: 165492639
+      terrainTiles_default_32: 516667453
       terrainTiles_default_24: 1568044749
-      terrainTiles_default_29: 532987095
-      terrainTiles_default_13: 2146772376
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

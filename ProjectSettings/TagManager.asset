@@ -47,12 +47,12 @@ TagManager:
   - name: Player
     uniqueID: 1442166107
     locked: 0
+  - name: Bullet
+    uniqueID: 610729027
+    locked: 0
   - name: Bushes
     uniqueID: 4050588033
     locked: 0
   - name: UI
     uniqueID: 4036803673
-    locked: 0
-  - name: New Layer 5
-    uniqueID: 610729027
     locked: 0

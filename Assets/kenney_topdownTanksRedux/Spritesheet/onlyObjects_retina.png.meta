@@ -120,10 +120,10 @@ TextureImporter:
       name: onlyObjects_retina_2
       rect:
         serializedVersion: 2
-        x: 651
-        y: 657
-        width: 37
-        height: 54
+        x: 652
+        y: 658
+        width: 36
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,29 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f119ca1d25bde234f9f6a59b87fb5138
+      spriteID: f8682d00aa05c9d4bb04fd52b2b179ec
       internalID: -602717493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: onlyObjects_retina_5
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 512
-        width: 31
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12a03dd71785a9141b2d9d0d7d4b6eb4
-      internalID: -786205809
       vertices: []
       indices: 
       edges: []
