@@ -40,6 +40,13 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Collided with : " + collision.name );
+
+        var damagable = collision.GetComponent<Damagable>();
+        if(damagable!=null)
+        {
+            damagable.Hit(damage);
+        }
+
         DisableObject();
     }
 }
