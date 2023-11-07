@@ -15,4 +15,31 @@ public class Bullet : MonoBehaviour
     private void Awake(){
         rb2d = GetComponent<Rigidbody2D>();
     }
+
+    public void Initialize()
+    {
+            startPosition = transform.position;
+            rb2d.velocity = transform.up * speed;
+    }
+
+    private void Update()
+    {
+        conquaredDistance = Vector2.Distance(transform.position,startPosition);
+        if (conquaredDistance >= maxDistance)
+        {
+            DisableObject();
+        }
+    }
+
+    private void DisableObject()
+    {
+        rb2d.velocity = Vector2.zero;
+        gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Collided with : " + collision.name );
+        DisableObject();
+    }
 }
