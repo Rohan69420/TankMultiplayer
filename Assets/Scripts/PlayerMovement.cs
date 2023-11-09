@@ -12,12 +12,19 @@ public class PlayerMovement : MonoBehaviour
     public UnityEvent<Vector2> OnMoveBody = new UnityEvent<Vector2>();
     public UnityEvent<Vector2> OnMoveTurret = new UnityEvent<Vector2>();
 
+    private bool forward = false;
+    private bool left = false;
+    private bool right = false;
+
     // Update is called once per frame
     void Update()
     {
        GetBodyMovement();
        GetTurretMovement();
        GetShootingInput();
+
+       //mobile control
+       TankControl();
     }
 
     private void GetShootingInput(){
@@ -43,5 +50,47 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 movementVector = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
         OnMoveBody?.Invoke(movementVector.normalized);
+    }
+
+    //for mobile controllers
+    public void TankControl()
+    {
+        Vector2 movementVector = new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"));
+    if (forward){
+       movementVector.y = 1;
+    }
+    if(left && !right){
+       movementVector.x = -1;
+    }
+    else if(!left && right){
+       movementVector.x = 1;
+    }
+   
+        OnMoveBody?.Invoke(movementVector.normalized);
+        
+    }
+
+    public void ForwardDown(){
+        forward = true;
+    }
+    
+    public void ForwardUp(){
+        forward = false;
+    }
+
+    public void LeftDown(){
+        left = true;
+    }
+
+    public void LeftUp(){
+        left = false;
+    }
+
+    public void RightDown(){
+        right = true;
+    }
+
+    public void RightUp(){
+        right = false;
     }
 }
