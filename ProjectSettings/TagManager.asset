@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Bushes
-  - Player
-  - Ground
-  - 
+  - Bullet
+  - Agent
+  - Hitable
+  - ObstacleMovement
   - 
   - 
   - 
