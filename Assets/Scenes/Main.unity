@@ -16056,6 +16056,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 406593623830039937, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 406593623830039937, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 915818287}
+    - target: {fileID: 406593623830039937, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestroyHelper
+      objectReference: {fileID: 0}
+    - target: {fileID: 406593623830039937, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}
+      propertyPath: OnDead.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DestroyUtil, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2501185202519353240, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}
       propertyPath: m_Name
       value: Tank
@@ -16100,6 +16116,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6522663379531223711, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25618,6 +25638,17 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &915818287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6952727388906039744, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}
+  m_PrefabInstance: {fileID: 475019304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02b491990f281143b4b37fde4022df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &985674719 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2501185202733525360, guid: f703d831b9560ef4ca94ce98c6ad3691, type: 3}

@@ -33,7 +33,8 @@ public class ObjectPool : MonoBehaviour
 			spawnedObject = Instantiate(objectToPool, transform.position, Quaternion.identity);
 			spawnedObject.name = transform.root.name + "_" + objectToPool.name + "_" + objectPool.Count;
 			spawnedObject.transform.SetParent(spawnedObjectsParent);
-		  }
+			spawnedObject.AddComponent<DestroyIfDisabled>();
+			}
 		  else{
 				spawnedObject = objectPool.Dequeue();
 				spawnedObject.transform.position = transform.position;
@@ -61,5 +62,18 @@ public class ObjectPool : MonoBehaviour
 					spawnedObjectsParent = new GameObject(name).transform;
 				}
 		}
+   }
+
+   private void OnDestroy()
+   {
+		  foreach (var item in objectPool)
+		  {
+				if(item == null)
+					continue;
+				else if (item.activeSelf == false)
+					Destroy(item);
+				else
+					item.GetComponent<DestroyIfDisabled>().SelfDestructionEnabled = true;
+		  }
    }
 }
